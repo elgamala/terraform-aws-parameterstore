@@ -1,4 +1,0 @@
-"name","value","tier","type","description"
-"/path/to/your/parameter1","DUMMY","Standard","SecureString","Tenant as Key, 2 Letter Shortcut as Value"
-"/path/to/parameter2","DUMMY","Standard","SecureString","Stage"
-"/global/param001","DUMMY","Standard","SecureString","Product"

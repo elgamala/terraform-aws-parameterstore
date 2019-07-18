@@ -1,10 +1,10 @@
-resource "aws_ssm_parameter" "secret" {
-  count       = length(local.params)
-  name        = local.params[count.index].name
-  description = local.params[count.index].description
-  type        = local.params[count.index].type
-  tier        = local.params[count.index].tier
-  value       = local.params[count.index].value
+resource "aws_ssm_parameter" "secret_from_input_vars" {
+  count       = length(var.param_list)
+  name        = var.param_list[count.index].name
+  description = var.param_list[count.index].description
+  type        = var.param_list[count.index].type
+  tier        = var.param_list[count.index].tier
+  value       = var.param_list[count.index].value
 
   tags = var.tags
 
